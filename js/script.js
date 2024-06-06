@@ -1,12 +1,9 @@
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav');
 
-burger.addEventListener('click', openMenu) 
-  function openMenu() {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav');
 
-   nav.classList.toggle('open');
-  burger.classList.toggle('active');
-
-
-}
-  
+  burger.addEventListener('click', function() {
+    nav.style.transition="transform 0.3s"
+    nav.classList.toggle('open');
+    burger.classList.toggle('active');
+  });

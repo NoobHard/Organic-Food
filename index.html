@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="Organic Fruit & Vegetables">
+	<meta name="keywords" content="Organic Fruit & Vegetables, Organic Fruit, Vegetables">
 	<meta name="description" content="Индивидуальное задание">
 	<meta property="og:title" content="Organic Food">
 	<meta property="og:site_name" content="Organic Fruit & Vegetables">
@@ -13,7 +13,7 @@
 	<link rel="icon" type="image/ico" sizes="32x32" href="icons/favicon.ico">
 	<meta property="og:image" content="https://www.favicon.by/collection">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
+	<script defer src="js/script.js"></script>
 	<title>Organic Food</title>
 </head>
 
@@ -25,8 +25,7 @@
 		<div class="header__fixed">
 			<div class="container header-wrapper">
 				<div class="burger"></div>
-				<div class="nav">
-					<div class="burger"></div>
+				<nav class="nav">				
 					<ul class="menu">
 					  <li class="menu-item">
 						<a class="menu-link" href="#">About Us</a>
@@ -41,16 +40,15 @@
 						<a class="menu-link" href="#">Contact</a>
 					  </li>
 					</ul>
-				  </div>
+				</nav>
 				<a class="header-logo" href="#">
 					<img src="img/header-logo.png" alt="logo">
 				</a>
 				<div class="header-block">
-					<form class="form" action="#">
-						<input class="search" type="text">
-						<button class="btn header-btn"></button>
+					<form class="form" action="#">						
+						<button class="btn header-btn" aria-label = "search"></button>
 					</form>
-					<a class="cart" href="#"></a>
+					<a class="btncart cart" aria-label = "cart" href="#"></a>
 					<a class="header-link link-bg--green" href="#">Regestar Now</a>
 				</div>
 			</div>
@@ -157,8 +155,8 @@
 								book. It has survived not only five centuries, but also the leap into electronic
 								typesetting, remaining essentially unchanged. It was popularis</p>
 							<span class="custormer-name">Ahmed Hridoy</span>
-							<button class="btn1  slider-prev slick-arrow"></button>
-							<button class="btn1 slider-next active slick-arrow"></button>
+							<button class="btn1 slider-prev slick-arrow " aria-label = "prev"></button>
+							<button class="btn1 slider-next active slick-arrow " aria-label = "next"></button>
 							<img src="img/star.png" alt="star">
 						</div>
 						<section class="man"><img src="img/man.png" alt="man"><img src="img/Group.png" alt="group">
@@ -205,26 +203,26 @@
 			<div class="footer-block">
 				<span class="footer-title">Navigation</span>
 				<ul class="footer-menu">
-					<li class="footer-item"><a href="#" class="footer-link">About Us</a></li>
-					<li class="footer-item"><a href="#" class="footer-link">Service</a></li>
-					<li class="footer-item"><a href="#" class="footer-link">Menu</a></li>
+					<li class="footer-item"><a  class="footer-link" href="#" >About Us</a></li>
+					<li class="footer-item"><a  class="footer-link" href="#" >Service</a></li>
+					<li class="footer-item"><a  class="footer-link" href="#" >Menu</a></li>
 				</ul>
 			</div>
 			<div class="footer-block">
 				<span class="footer-title">Resources</span>
 				<ul class="footer-menu">
-					<li class="footer-item"><a href="#" class="footer-link">Reviews</a></li>
-					<li class="footer-item"><a href="#" class="footer-link">Blog</a></li>
-					<li class="footer-item"><a href="#" class="footer-link">Update News</a></li>
+					<li class="footer-item"><a class="footer-link" href="#">Reviews</a></li>
+					<li class="footer-item"><a class="footer-link" href="#">Blog</a></li>
+					<li class="footer-item"><a class="footer-link" href="#">Update News</a></li>
 				</ul>
 			</div>
 			<div class="footer-block">
 				<span class="footer-title">Contact Us</span>
-				<span class="footer-email">Email: oyasim@email.com</span>
-				<ul class="footer-sucial">
-					<li><a href=""><img src="img/facebook.svg" alt="facebook"></a></li>
-					<li><a href=""><img src="img/twitter.svg" alt="twitter"></a></li>
-					<li><a href=""><img src="img/instagram.svg" alt="instagram"></a></li>
+				<span>Email:</span><a href="mailto:moyasim@email.com"> moyasim@email.com</a> 
+				<ul class="footer-sucial" aria-label = "">
+					<li><a href="#" class="facebook"><img src="img/facebook.svg" alt="facebook"></a></li>
+					<li><a href="#" class="twitter"><img src="img/twitter.svg" alt="twitter" ></a></li>
+					<li><a href="#" class="instagram"><img src="img/instagram.svg" alt="instagram"></a></li>
 				</ul>
 			</div>
 		</div>
